@@ -14,11 +14,8 @@ spec:
       labels:
         app: spring-boot-app
     spec:
-      hostNetwork: true
-      dnsPolicy: ClusterFirstWithHostNet
       containers:
       - name: spring-boot-app
         image: sheik13/ultimate-cicd:19
         ports:
         - containerPort: 8080
-          hostPort: 9090
